@@ -1,0 +1,38 @@
+# --- Nix ---
+result
+result-*
+/nix/
+.direnv/
+.envrc
+nixos-*
+*.drv
+*.nix-*
+.nix-*
+
+# --- devenv ---
+.devenv/
+.devenv.sh
+/.devenv.*
+/devenv.local.nix
+/devenv.local.yaml
+/.jj/
+/screenshots/
+
+# --- Rust ---
+/target/
+debug/
+**/*.rs.bk
+*.pdb
+
+# Cargo.lock is intentionally not ignored (committed for reproducible builds).
+# Uncomment if this is a library crate:
+# Cargo.lock
+
+# --- Vendor ---
+vendor/
+
+# --- Editor / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
